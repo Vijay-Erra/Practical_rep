@@ -1,0 +1,7 @@
+version: 2
+sources:
+    - name: SOURCE_TABLE_NAME
+      database: "{{('SECOND_DB')}}"
+      schema: DBT_DEV1
+      tables:
+        - name: DBT_MODEL
