@@ -5,3 +5,5 @@ sources:
       schema: DBT_DEV1
       tables:
         - name: DBT_MODEL
+        - name: SF_TEST 
+        

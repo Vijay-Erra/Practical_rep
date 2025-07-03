@@ -5,5 +5,5 @@ WITH tb1 as(
     ID ,
     NAME,
     LOCATION
-    from {{source('SOURCE_TABLE_NAME','DBT_MODEL')}})
-select * from tb1
+    from {{source('SOURCE_TABLE_NAME','DBT_MODEL')}}) 
+select * from tb1 
