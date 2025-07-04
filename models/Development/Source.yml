@@ -2,8 +2,18 @@ version: 2
 sources:
     - name: SOURCE_TABLE_NAME
       database: "{{('SECOND_DB')}}"
-      schema: DBT_DEV1
+     # schema: DBT_DEV1
+      schema: RAW_SCHEMA
       tables:
         - name: DBT_MODEL
         - name: SF_TEST 
+        - name: DBT_SS 
+          columns: 
+            - name: ID 
+              tests: 
+                - unique 
+                - not_null
+            
+            
+
         
